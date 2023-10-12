@@ -456,7 +456,7 @@ a {
 
 .card {
   background-color: whitesmoke;
-  width: 450px;
+  width: 400px;
   /* box-shadow: 0 0 10px rgb(192, 190, 190); */
   display: flex;
   flex-direction: column;
