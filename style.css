@@ -40,7 +40,7 @@ html {
 }
 
 body {
-  background: whitesmoke;
+  background: rgb(6, 6, 6);
   margin: 0;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
@@ -112,33 +112,45 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: white;
 }
 
 .section-title {
   font-size: var(--fs-h3);
   padding: 25px;
+  color: white;
 }
 
 .section-title-par {
   font-weight: var(--fw-reg);
   max-width: 800px;
   padding: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }
 
 .line-break {
-  border: 2px solid var(--clr-blue);
+  border: 2px solid rgb(175, 71, 23);
   width: 100px;
-  margin: auto;
+  margin: 25px;
+  text-align: center;
 }
 
 .blue {
   margin-top: 100px;
-  color: var(--clr-blue);
+  color: rgb(175, 71, 23);
 }
 
-.svg-line {
-  margin: 0 400px 0 400px;
+a {
+    text-decoration: none;
 }
+
+/* .svg-line {
+  margin: 0 400px 0 400px;
+} */
 
 
 /*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Navbar <<<<<<<<<<<<<<<<<<<<<<<<<<<  */
@@ -443,18 +455,28 @@ body {
 }
 
 .card {
-  border-radius: 5px;
+  background-color: whitesmoke;
   width: 450px;
-  box-shadow: 0 0 10px rgb(192, 190, 190);
+  /* box-shadow: 0 0 10px rgb(192, 190, 190); */
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 25px;
-  border-top: 5px solid var(--clr-blue);
+  /* padding: 25px; */
+  border-top: 5px solid rgb(175, 71, 23);
+}
+
+.card:hover {
+    cursor: pointer;
+    border: 5px solid rgb(175, 71, 23);
+}
+
+.card-button {
+    color: black;
 }
 
 .card-icon {
-  width: 75px;
+  width: 100%;
+  height: 200px;
 }
 
 .card-title {
@@ -479,162 +501,7 @@ body {
 
 
 
-/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>> Process  <<<<<<<<<<<<<<<<<<<<<<<  */
 
-/* .process-section {
-  display: flex;
-  padding: 50px 100px 50px 100px;
-  margin-bottom: 100px;
-  background-color: var(--clr-blue);
-  background-image: url(images/heroImage.jpg);
-    background-position: center;
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.processes-tabs {
-  list-style: none;
-  width: 500px;
-  color: white;
-  font-weight: var(--fw-bold);
-  max-height: 435px;
-}
-
-.step-tab {
-  padding: 30px 50px 30px 5px;
-  border-radius: 10px 0px 0px 10px;
-  max-width: 200px;
-}
-
-.process-btn {
-  margin-left: 60%;
-  min-width: 150px;
-}
-
-.step-tab::after {
-  content: '';
-  width: 80%;
-  height: 5px;
-  background-color: rgb(214, 216, 221);
-}
-
-.step-tab:hover {
-  cursor: pointer;
-  background-color: rgb(214, 216, 221);
-  color: black;
-}
-
-[data-tab-content] {
-  display: none;
-}
-
-.active[data-tab-content] {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.active .step-tab {
-  background-color: orangered;
-}
-
-#analysis-content,
-#design-content,
-#develop-content,
-#testing-content,
-#deployment-content{
-  background-color: rgb(214, 216, 221);
-  border-radius: 0px 10px 10px 0px;
-  padding: 50px;
-  height: 100%;
-  margin-right: 50px;
-  gap: 25px;
-
-
-  animation: fadeIn 2s;
-  -webkit-animation: fadeIn 2s;
-  -moz-animation: fadeIn 2s;
-  -o-animation: fadeIn 2s;
-  -ms-animation: fadeIn 2s;
-}
-
-.process-content-info {
-  max-width: 300px;
-}
-
-.process-img {
-  width: 300px;
-  height: 300px;
-}
-
-@media(max-width: 900px) {
-  .process-section {
-    flex-direction: column;
-  }
-
-  .step-tab {
-    padding: 0;
-    padding-bottom: 50px;
-    border-radius: 0;
-  }
-
-  #analysis-content,
-  #design-content,
-  #develop-content,
-  #testing-content,
-  #deployment-content {
-    margin: 0;
-    padding: 50px;
-    border-radius: 0px 0px 10px 10px;
-    max-height: 435px;
-  }
-
-  .processes-tabs {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-  }
-} */
-
-
-/*  >>>>>>>>>>>>>>>>>>>>>>>>>> Benefits  <<<<<<<<<<<<<<<<<<<<<<<<<<<  */
-.benefits-section {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  max-width: 100%;
-  gap: 100px;
-  justify-content: center;
-  align-items: center;
-}
-
-.benefit {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  gap: 50px;
-}
-
-.benefit-icon {
-  width: 30rem;
-}
-
-.benefit-left {
-  flex-wrap: wap;
-}
-
-.benefit-right {
-  flex-wrap: wrap-reverse;
-}
-
-.benefit-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 400px;
-}
 
 
 /* >>>>>>>>>>>>>>> Contact Form <<<<<<<<<<<<<<< */
@@ -696,7 +563,7 @@ textarea {
   max-width: 600px;
   padding: 0 10px 0 10px;
   /* gap: 50px; */
-  border-left: 3px solid var(--clr-blue);
+  border-left: 3px solid rgb(175, 71, 23);
 }
 
 .contact-info h2 {
@@ -710,7 +577,7 @@ textarea {
 
 .submit-btn {
   border-radius: 10px;
-  background-color: var(--clr-blue);
+  background-color: rgb(175, 71, 23);
   border: 0;
   color: white;
   font-size: 20px;
@@ -720,7 +587,7 @@ textarea {
 .submit-btn:hover {
   cursor: pointer;
   background-color: white;
-  color: #3843B8;
+  color: rgb(175, 71, 23);
 }
 
 .contact-info-details {
@@ -758,48 +625,6 @@ textarea {
   }
 }
 
-/*   >>>>>>>>>>>>>>>>>>>  Services Page    <<<<<<<<<<<<<<<<<<<<<  */
-
-.services-page-img-grid {
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.services-img-one {
-  grid-row: 1 / 3 ;
-}
-
-.services-img-two {
-  grid-row: 2 / 4;
-}
-
-.services-img-one {
-  width: 30rem;
-  border-radius: 5px;
-  height: auto;
-  grid-column: 1 / 6;
-}
-
-.services-img-two {
-  width: 25rem;
-  border-radius: 5px;
-  background-color: whitesmoke;
-  gap: 25px;
-  grid-column: 3 / 6;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 /*  >>>>>>>>>>>>>>>>>>>>>   Footer   <<<<<<<<<<<<<<<<<< */
 
 .footer-section {
@@ -810,6 +635,7 @@ textarea {
   /* align-items: center; */
   margin-top: 0;
   padding: 50px;
+  color: white;
 }
 
 .footer-section h4 {
@@ -822,7 +648,7 @@ textarea {
 
 .footer-navigation-section a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .footer-info {
@@ -832,6 +658,6 @@ textarea {
 .footer-subsection {
   padding: 25px 0px 25px 0px;
   text-align: center;
-  background-color: var(--clr-blue);
-  color: white;
+  background-color: whitesmoke;
+  color: black;
 }
