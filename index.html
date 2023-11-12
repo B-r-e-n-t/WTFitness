@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;600&display=swap" rel="stylesheet">
-    <title>Sundiver Solutions</title>
+    <title>WT Fitness</title>
 </head>
 <body>
     
@@ -17,10 +17,10 @@
     
 <header class="hero-section">
     <video autoplay loop muted plays-inline class="back-video">
-        <source src="images/herovideo.mp4">
+        <source src="images/pexels-kampus-production-8637184 (1440p).mp4">
     </video>
     <section class="navigation">
-            <a href="home.html"><div class="logo">
+            <a href="index.html"><div class="logo">
                 <img src="images/logo.png" class="logo" alt="Sundiver Solutions logo">
             </div></a>  
             <button class="nav-toggle">
@@ -28,11 +28,11 @@
             </button>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Classes</a></li>
-                    <li class="nav__item"><a href="about.html" class="nav__link">About Me</a></li>
-                    <li class="nav__item"><a href="services.html" class="nav__link">Contact Me</a></li>
-                    <li class="nav__item"><a href="contact.html" class="nav__link">Videos</a></li>
-                    <li class="nav__item"><a href="contact.html" class="nav__link">Book Online</a></li>
+                    <li class="nav__item"><a href="#classes" class="nav__link">Classes</a></li>
+                    <li class="nav__item"><a href="#about-me" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#contact-me" class="nav__link">Contact Me</a></li>
+                    <li class="nav__item"><a href="videos.html" class="nav__link">Videos</a></li>
+                    <!-- <li class="nav__item"><a href="contact.html" class="nav__link">Book Online</a></li> -->
                 </ul>
             </nav>
     </section>
@@ -41,7 +41,7 @@
         <div class="hero-section-main">
             <h1 class="title">What Have You Done For Your Fitness Today?</h1>
                 <h2 class="description description-one">Achieve Your Goals & Change Your Life</h2>
-            <a href="contact.html"><Button class="btn">Contact Me Today</Button></a>
+            <a href="#contact-me"><Button class="btn">Contact Me Today</Button></a>
         </div>
     </section>
 </header>
@@ -53,7 +53,7 @@
 
 
 
-    <div class="section-title-container">
+    <div class="section-title-container" id="about-me">
         <h2>James Corbett</h2>
         <h3>Personal Training in Austin, TX</h3>
         <h3 class="section-title-par">
@@ -71,47 +71,45 @@
             levels and develop individualized personal training sessions to help you meet your goals.
         </h3>
         <div class="line-break"></div>
-        <h3 class="section-title"><span class="blue">WORK WITH ME</span></h3>
+        <h3 id="classes" class="section-title"><span class="blue">WORK WITH ME</span></h3>
     </div>
 
     <div class="services-section">
-        <a class="card-button" href="">
-        <div class="card">
+        <a class="card">
             <img class="card-icon" src="images/group.jpg" alt="web development icon">
             <h3 class="card-title">Group Class</h3>
-            <p class="card-features-list"></p>
+            <p class="card-features-list">
             We can plan, design, and develop full-stack web applications to fulfill your business
             needs and grow your idea.
             </p>
-        </div>
         </a>
 
-        <div class="card">
+        <a class="card">
             <img class="card-icon" src="images/one.jpg" alt="feature development icon">
             <h3 class="card-title">One on One</h3>
-            <p class="card-features-list"></p>
+            <p class="card-features-list">
             We can plan, design, and develop full-stack web applications to fulfill your business
                 needs and grow your idea.
-                </p>
-        </div>
+            </p>
+        </a>
 
-        <div class="card">
+        <!-- <a class="card">
             <img class="card-icon" src="images/crossfit.jpg" alt="consulting icon">
             <h3 class="card-title">Crossfit</h3>
             <p class="card-features-list">
                 We can plan, design, and develop full-stack web applications to fulfill your business
                 needs and grow your idea.
                 </p>
-        </div>
+            </a> -->
 
-        <div class="card">
-            <img class="card-icon" src="images/barack-obama-1159790_1280.jpg" alt="MVP Builder icon">
+        <a class="card">
+            <img class="card-icon" src="images/elderly-couple-with-woman-sitting-skate-park.jpg" alt="MVP Builder icon">
             <h3 class="card-title">Health Consultation</h3>
             <p class="card-features-list">
                 We can plan, design, and develop full-stack web applications to fulfill your business
                 needs and grow your idea.
                 </p>
-        </div>
+            </a>
 
     </div>
 
@@ -123,39 +121,27 @@
 
 
     <section class="contact-form-container">
-        <div class="form-border">
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="your-access-key-here">
-            <input type="hidden" name="subject" value="New Submission from Sundiver Solutions">
-            <input type="text" name="name" required class="name" placeholder="Name">
-            <input type="text" name="name" required class="name" placeholder="Business">
-            <input type="text" name="phone" class="name" placeholder="Phone Number">
-            <input type="email" name="email" required class="name" placeholder="Email">
-            <textarea name="message" required class="name" placeholder="What can we do for you?"></textarea>
-            <input type="hidden" name="redirect" value="https://web3forms.com/success">
-            <button type="submit" class="submit-btn">Submit Form</button>
-          </form>
-        </div>
-  
-  
-  
-        <div class="contact-info">
-            <h2>Do you have any projects in mind? <span class="blue">CONTACT US</span> below to tell us about your exciting idea or to 
-                ask any questions you may have. No comittment, no pressure, just conversation.
-            </h2>
-            <div class="contact-info-details">
-              <img class="contact-icon" src="images/email.png" alt="email icon">
-              <p><span class="blue">Email Address:</span> <br>sharpewebsites@gmail.com</p>
-            </div>
-            <div class="contact-info-details">
-              <img class="contact-icon" src="images/telephone.png" alt="telephone icon">
-              <p><span class="blue">Phone Number:</span><br>601-454-5426</p>
-            </div>
-            <div class="contact-info-details">
-                <img class="contact-icon" src="images/placeholder.png" alt="telephone icon">
-                <p><span class="blue">Locations</span><br>New York and Switzerland - services provided for any place in the world!</p>
-              </div>
-        </div>
+        <h3 id="contact-me" class="section-title"><span class="blue">CONTACT ME</span></h3>
+        <!-- <div class="form-border"> -->
+          <!-- <div class="contact-info-details">
+            <img class="contact-icon" src="images/phone-call.png" alt="telephone icon">
+            <p><span class="blue">601-454-5426</p>
+                <img class="contact-icon" src="images/mail.png" alt="email icon">
+            <p><span class="blue">sharpewebsites@gmail.com</p>
+          </div> -->
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="42b64233-79df-4289-843e-92bd0819840d">
+                <input type="hidden" name="subject" value="New Submission from WT Fitness">
+                <input type="text" name="name" required class="name" placeholder="Name">
+                <input type="text" name="phone" class="name" placeholder="Phone Number">
+                <input type="email" name="email" required class="name" placeholder="Email">
+                <textarea name="message" required class="name" placeholder="What can I do for you?"></textarea>
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                <button type="submit" class="submit-btn">Submit Form</button>
+              </form>
+
+        <!-- </div> -->
       </section>
 
 
@@ -173,16 +159,17 @@
         <div class="footer-navigation-section">
             <h1>Navigation</h1>
             <a href="index.html"><h4>Home</h4></a>
-            <a href="about.html"><h4>About Us</h4></a>
-            <a href="portfolio.html"><h4>Portfolio</h4></a>
-            <a href="contact.html"><h4>Contact Us</h4></a>
+            <a href="#about-me"><h4>About Me</h4></a>
+            <a href="#classes"><h4>Classes</h4></a>
+            <a href="#contact-me"><h4>Contact Me</h4></a>
+            <a href="videos.html"><h4>Videos</h4></a>
+            <!-- <a href="contact.html"><h4>Book Online</h4></a> -->
         </div>
         <div class="footer-services-section">
             <h1>Services</h1>
-            <h4>Web Development</h4>
-            <h4>Feature Development</h4>
-            <h4>Consulting</h4>
-            <h4>MVP Builder</h4>
+            <h4>Group Classes</h4>
+            <h4>One on One</h4>
+            <h4>Health Consultation</h4>
         </div>
 </footer>
 

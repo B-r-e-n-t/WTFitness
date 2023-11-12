@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;600&display=swap" rel="stylesheet">
+    <title>WT Fitness</title>
+</head>
+<body>
+
+    <section class="navigation">
+        <a href="index.html"><div class="logo">
+            <img src="images/logo.png" class="logo" alt="Sundiver Solutions logo">
+        </div></a>  
+        <button class="nav-toggle">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#classes" class="nav__link">Classes</a></li>
+                <li class="nav__item"><a href="#about-me" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#contact-me" class="nav__link">Contact Me</a></li>
+                <li class="nav__item"><a href="videos.html" class="nav__link">Videos</a></li>
+                <!-- <li class="nav__item"><a href="contact.html" class="nav__link">Book Online</a></li> -->
+            </ul>
+        </nav>
+</section>
+
+<h1 style="text-align: center; color: white; margin: 200px;">Videos coming Soon!</h1>
+
+<div class="section-title-container" id="about-me">
+    <h2>James Corbett</h2>
+    <h3>Personal Training in Austin, TX</h3>
+    <h3 class="section-title-par">
+        Are you looking for a better path to weight loss, or have you been struggling to reach your fitness goals on your own? 
+        Many people believe they can manage fitness training on their own, and while some have moderate success, working with a 
+        fitness instructor can offer a more personalized experience with better results.
+        <div class="line-break"></div>
+        The craziest high intensity workout may offer great results to some but injuries to others. Personal 
+        training isn’t like boot camp, where everyone goes through the same set of exercises regardless of their starting 
+        points and ability levels. Individualized training with a personal trainer who can identify your needs and develop a 
+        holistic training program just for you will offer much better results.
+        <div class="line-break"></div>
+        James is a personal trainer offering a wide range of fitness and health coaching services in Austin, Texas. Whether your goals include 
+        gaining muscle, weight management, strength training, or fat loss, James can assess your current fitness 
+        levels and develop individualized personal training sessions to help you meet your goals.
+    </h3>
+    <div class="line-break"></div>
+    <h3 id="classes" class="section-title"><span class="blue">WORK WITH ME</span></h3>
+</div>
+
+<div class="services-section" id="classes">
+    <a class="card">
+        <img class="card-icon" src="images/group.jpg" alt="web development icon">
+        <h3 class="card-title">Group Class</h3>
+        <p class="card-features-list">
+        We can plan, design, and develop full-stack web applications to fulfill your business
+        needs and grow your idea.
+        </p>
+    </a>
+
+    <a class="card">
+        <img class="card-icon" src="images/one.jpg" alt="feature development icon">
+        <h3 class="card-title">One on One</h3>
+        <p class="card-features-list">
+        We can plan, design, and develop full-stack web applications to fulfill your business
+            needs and grow your idea.
+        </p>
+    </a>
+
+    <!-- <a class="card">
+        <img class="card-icon" src="images/crossfit.jpg" alt="consulting icon">
+        <h3 class="card-title">Crossfit</h3>
+        <p class="card-features-list">
+            We can plan, design, and develop full-stack web applications to fulfill your business
+            needs and grow your idea.
+            </p>
+        </a> -->
+
+    <a class="card">
+        <img class="card-icon" src="images/elderly-couple-with-woman-sitting-skate-park.jpg" alt="MVP Builder icon">
+        <h3 class="card-title">Health Consultation</h3>
+        <p class="card-features-list">
+            We can plan, design, and develop full-stack web applications to fulfill your business
+            needs and grow your idea.
+            </p>
+        </a>
+
+</div>
+
+
+
+
+
+
+
+
+<section class="contact-form-container">
+    <h3 id="contact-me" class="section-title"><span class="blue">CONTACT ME</span></h3>
+    <!-- <div class="form-border"> -->
+      <!-- <div class="contact-info-details">
+        <img class="contact-icon" src="images/phone-call.png" alt="telephone icon">
+        <p><span class="blue">601-454-5426</p>
+            <img class="contact-icon" src="images/mail.png" alt="email icon">
+        <p><span class="blue">sharpewebsites@gmail.com</p>
+      </div> -->
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="your-access-key-here">
+            <input type="hidden" name="subject" value="New Submission from Sundiver Solutions">
+            <input type="text" name="name" required class="name" placeholder="Name">
+            <input type="text" name="phone" class="name" placeholder="Phone Number">
+            <input type="email" name="email" required class="name" placeholder="Email">
+            <textarea name="message" required class="name" placeholder="What can we do for you?"></textarea>
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+            <button type="submit" class="submit-btn">Submit Form</button>
+          </form>
+
+    <!-- </div> -->
+  </section>
+
+
+
+
+
+
+
+
+<footer class="footer-section">
+   
+    <div class="footer-info">
+        <img src="images/logo.png" class="logo-footer" alt="logo">
+    </div>
+    <div class="footer-navigation-section">
+        <h1>Navigation</h1>
+        <a href="index.html"><h4>Home</h4></a>
+            <a href="#about-me"><h4>About Me</h4></a>
+            <a href="#classes"><h4>Classes</h4></a>
+            <a href="#contact-me"><h4>Contact Me</h4></a>
+            <a href="videos.html"><h4>Videos</h4></a>
+        <!-- <a href="contact.html"><h4>Book Online</h4></a> -->
+    </div>
+    <div class="footer-services-section">
+        <h1>Services</h1>
+        <h4>Group Classes</h4>
+        <h4>One on One</h4>
+        <h4>Health Consultation</h4>
+    </div>
+</footer>
+
+<div class="footer-subsection">
+<p>Developed by <strong>Salt City Web Design</strong></p>
+<p>Copyright © 2023</p>
+</div>
+
+    
+
+<script src="script.js"></script>
+</body>
