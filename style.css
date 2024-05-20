@@ -1,3 +1,4 @@
+
 *,
 *::after,
 *::before {
@@ -706,6 +707,23 @@ textarea {
   color: black;
 }
 
+.socials {
+  display: flex;
+  justify-content: center;
+  color: var(--clr-white);
+  /* gap: 25px; */
+  padding: 25px;
+}
+
+.socials-icon {
+  width: 2em;
+}
+
+.socials-link {
+  color: white;
+  display: flex;
+  gap: 25px;
+}
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>> Image Gallery >>>>>>>>>>>>>>>>>>>>>>>>>>> */
